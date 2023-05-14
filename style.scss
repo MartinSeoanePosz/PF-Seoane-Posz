@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    color: red;
+}
+body{
+    background-color: black;
+}
+.logo{
+    float: left;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.barra{
+    float: right;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    text-transform: capitalize;
+}
+ul a {
+    color: white;
+    text-decoration: none;
+}
+ul a:hover{
+    color: rgb(189, 6, 6);
+    text-decoration: underline;
+}
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #333;
+    background-image: url(/img/sushi-2009611_1920.jpg);
+    background-size: cover;
+    background-position: left;
+}
+div .mainPage{
+    display: flex; 
+    justify-content: center;
+    position: absolute;
+}
+div .title{
+    text-align:center;
+    color: red;
+    padding-top: 30px;
+    
+}
+div .mainPage,.info{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 90%);
+    border: 1px solid hsl(0, 0%, 70%);
+    outline: none;
+    cursor: pointer;
+    border-radius: .3em;
+    color: black;
+    width: 150px;
+    position: center;
+
+
+}
+footer{
+    text-align: center;
+    font-size: 30px;
+    background-color: #000;
+    color: white;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+footer p{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.redes a{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 30px;
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    font-size: 40px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+
+}
+
+h2{
+    text-align: center;
+}
+.description{
+    background-color: #333030c7;
+    color: white;
+    font-size: large;
+}
+.contactForm{
+    width: 65%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid red;
+    float: right;
+    margin: 30px;
+    padding: 30px;
+    padding-right: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+textarea{
+    width: 30em;
+    height: 8em;
+}
+.mapa1{
+    display: flex;
+    gap: 20px  ;
+
+}
+
+.mapa2{
+    display: flex;
+    gap: 20px  ;
+}
+.dondeEstamos{
+    color: white;
+}
+.mapa1{
+    background-color: hsla(0, 0%, 7%, 0.812);
+}
+.mapa2{
+    background-color: hsla(0, 0%, 7%, 0.812);
+}
+.contenedor{
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img4 img5 img6"
+    "img7 img4 img8 img8";
+    padding: 20px;
+    grid-gap: 10px;
+}
+@media only screen and (max-width: 600px)  {
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-areas: 
+        "img1 img1 img3"
+        "img2 img2 img3"
+        "img4 img5 img6"
+        "img4 img7 img8";
+    }
+    .mapa1{
+        flex-direction: column;
+        text-align: center;
+    }
+    .mapa2{
+        flex-direction: column;
+        text-align: center;
+    }
+    textarea{
+        width: 20em;
+        height: 5em;
+    }
+    header{
+        height: 120px
+    }
+}
+
+
+.img{
+    border: 3px solid #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.img1{
+    background-image: url(/img/japanese-sushi-food-maki-ands-260nw-1470615731.webp);
+    grid-area: img1;
+}
+
+.img2{
+    background-image: url(/img/sushi-2620063_1280.jpg);
+    grid-area: img2;
+}
+
+.img3{
+    background-image: url(/img/sushi-2856547_1280.jpg);
+    grid-area: img3;
+    
+}
+
+.img4{
+    background-image: url(/img/sushi-596930_1280.jpg);
+    grid-area: img4;
+}
+
+.img5{
+    background-image: url(/img/sushi-599721_1280.jpg);
+    grid-area: img5;
+}
+
+.img6{
+    background-image: url(/img/images.jpg);
+    grid-area: img6;
+}
+
+.img7{
+    background-image: url(/img/photo-1553621042-f6e147245754.avif);
+    grid-area: img7;
+}
+
+.img8{
+    background-image: url(/img/photo-1562802378-063ec186a863.avif);
+    grid-area: img8;
+}
