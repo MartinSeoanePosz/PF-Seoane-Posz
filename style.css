@@ -110,6 +110,11 @@ footer p{
 h2{
     text-align: center;
 }
+.description{
+    background-color: #333030c7;
+    color: white;
+    font-size: large;
+}
 .contactForm{
     width: 65%;
     color: white;
