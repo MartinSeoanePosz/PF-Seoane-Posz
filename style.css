@@ -50,8 +50,9 @@ main{
     background-position: left;
 }
 div .mainPage{
-    display: flex;
+    display: flex; 
     justify-content: center;
+    position: absolute;
 }
 div .title{
     text-align:center;
@@ -60,7 +61,6 @@ div .title{
     
 }
 div .mainPage,.info{
-    text-align: center;
     text-decoration: none;
     background-color: hsl(0, 0%, 90%);
     border: 1px solid hsl(0, 0%, 70%);
@@ -69,6 +69,7 @@ div .mainPage,.info{
     border-radius: .3em;
     color: black;
     width: 150px;
+    position: center;
 
 
 }
@@ -125,6 +126,11 @@ h2{
     padding: 30px;
     padding-right: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+textarea{
+    width: 30em;
+    height: 8em;
 }
 .mapa1{
     display: flex;
@@ -175,6 +181,13 @@ h2{
     .mapa2{
         flex-direction: column;
         text-align: center;
+    }
+    textarea{
+        width: 20em;
+        height: 5em;
+    }
+    header{
+        height: 120px
     }
 }
 
