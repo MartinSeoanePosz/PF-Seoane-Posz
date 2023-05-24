@@ -84,6 +84,19 @@ div .mainPage, .info {
   position: center;
 }
 
+.imagenLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descriptionInfo {
+  background-color: rgba(51, 48, 48, 0.7803921569);
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
 footer {
   text-align: center;
   font-size: 30px;
